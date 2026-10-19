@@ -1,0 +1,16 @@
+{
+  "customer_name": "Elettrica Romana",
+  "customer_contact": "Marco",
+  "customer_email": null,
+  "customer_fax": null,
+  "customer_reference": null,
+  "order_date": null,
+  "delivery": "Per domani mattina",
+  "notes": "Handwritten note on squared paper.",
+  "lines": [
+    {"raw": "30 interruttori bipolari 16A", "description": "interruttori bipolari 16A", "code": null, "quantity": 30, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "5 quadri 12 moduli", "description": "quadri 12 moduli", "code": null, "quantity": 5, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "200 m cavo FS17 2,5 blu", "description": "cavo FS17 2,5 blu", "code": null, "quantity": 200, "unit": "m", "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "le solite scatole 503", "description": "scatole 503", "code": null, "quantity": null, "unit": null, "unit_price": null, "confidence": "high", "note": "\"Le solite\": the usual quantity, not written."}
+  ]
+}

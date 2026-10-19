@@ -1,0 +1,17 @@
+{
+  "customer_name": "Atlas Fleet Services Ltd",
+  "customer_contact": "Daniel Borg",
+  "customer_email": "ops@atlasfleet.example",
+  "customer_fax": null,
+  "customer_reference": "AF-2291",
+  "order_date": "2026-10-16",
+  "delivery": "Pomezia depot by Thursday if possible",
+  "notes": null,
+  "lines": [
+    {"raw": "12x oil filter FO316", "description": "oil filter", "code": "FO316", "quantity": 12, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "4 sets front brake pads for the Ducato vans", "description": "front brake pads for the Ducato vans", "code": null, "quantity": 4, "unit": "sets", "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "2 x engine oil 5W-30 5L", "description": "engine oil 5W-30 5L", "code": null, "quantity": 2, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "60 iridium spark plugs", "description": "iridium spark plugs", "code": null, "quantity": 60, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "2 wiper blades 650mm", "description": "wiper blades 650mm", "code": null, "quantity": 2, "unit": null, "unit_price": null, "confidence": "high", "note": null}
+  ]
+}

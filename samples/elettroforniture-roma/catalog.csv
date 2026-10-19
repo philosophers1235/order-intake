@@ -1,0 +1,11 @@
+code,name,aliases,unit,content_qty,content_unit,price,previous_price,status,replaced_by
+MT-2P16,Interruttore magnetotermico bipolare 16A 4.5kA,interruttore bipolare 16a|magnetotermico 2p 16a|bipolare 16a,pc,,,18.40,,active,
+MT-2P10,Interruttore magnetotermico bipolare 10A 4.5kA,interruttore bipolare 10a|magnetotermico 2p 10a|interruttore 10a|bipolare 10a,pc,,,17.90,,active,
+DF-2P25,Interruttore differenziale puro 2P 25A 30mA,differenziale 25a|salvavita 25a,pc,,,46.00,,active,
+CN-12,Centralino da parete 12 moduli IP40,centralino 12 moduli|quadro 12 moduli|quadretto 12 moduli,pc,,,22.00,,active,
+CN-24,Centralino da parete 24 moduli IP40,centralino 24 moduli|quadro 24 moduli,pc,,,36.50,,active,
+CV-FS17-25-BL,Cavo FS17 2.5 mm blu (matassa 100 m),cavo fs17 2.5 blu|fs17 2.5 blu|blu 2.5,coil,100,m,39.00,,active,
+CV-FS17-25-NE,Cavo FS17 2.5 mm nero (matassa 100 m),cavo fs17 2.5 nero|fs17 2.5 nero|nero 2.5,coil,100,m,39.00,,active,
+CV-FS17-15-BL,Cavo FS17 1.5 mm blu (matassa 100 m),cavo fs17 1.5 blu|fs17 1.5 blu|blu 1.5,coil,100,m,27.00,,active,
+SC-503,Scatola da incasso 503,scatola 503|scatole 503|cassetta 503,pc,,,0.62,,active,
+PR-SCH,Presa schuko 16A,presa schuko|presa tedesca,pc,,,4.10,,active,

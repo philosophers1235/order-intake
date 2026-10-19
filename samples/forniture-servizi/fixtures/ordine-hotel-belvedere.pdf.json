@@ -1,0 +1,15 @@
+{
+  "customer_name": "Hotel Belvedere Tiburtino srl",
+  "customer_contact": null,
+  "customer_email": null,
+  "customer_fax": null,
+  "customer_reference": "2026/1184",
+  "order_date": "2026-10-16",
+  "delivery": "Consegna entro venerdì, scarico dal retro",
+  "notes": null,
+  "lines": [
+    {"raw": "Rotoli carta asciugamani | 10 | 4,80", "description": "Rotoli carta asciugamani", "code": null, "quantity": 10, "unit": null, "unit_price": 4.80, "confidence": "high", "note": null},
+    {"raw": "Detergente pavimenti 5 L | 8 | 7,50", "description": "Detergente pavimenti 5 L", "code": null, "quantity": 8, "unit": null, "unit_price": 7.50, "confidence": "high", "note": null},
+    {"raw": "Bicchieri compostabili 200 cc | 15 | 3,20", "description": "Bicchieri compostabili 200 cc", "code": null, "quantity": 15, "unit": null, "unit_price": 3.20, "confidence": "high", "note": null}
+  ]
+}

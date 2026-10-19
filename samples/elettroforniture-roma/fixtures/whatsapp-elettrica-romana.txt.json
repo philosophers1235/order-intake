@@ -1,0 +1,15 @@
+{
+  "customer_name": "Elettrica Romana",
+  "customer_contact": "Marco",
+  "customer_email": null,
+  "customer_fax": null,
+  "customer_reference": null,
+  "order_date": "2026-10-17",
+  "delivery": "per lunedì",
+  "notes": null,
+  "lines": [
+    {"raw": "10 interruttori 10A", "description": "interruttori 10A", "code": null, "quantity": 10, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "1 rotolo di nero 2,5", "description": "nero 2,5", "code": null, "quantity": 1, "unit": "rotolo", "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "2 differenziali 25A", "description": "differenziali 25A", "code": null, "quantity": 2, "unit": null, "unit_price": null, "confidence": "high", "note": null}
+  ]
+}

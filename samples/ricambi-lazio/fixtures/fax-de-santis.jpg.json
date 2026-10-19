@@ -1,0 +1,15 @@
+{
+  "customer_name": "Officina Meccanica De Santis",
+  "customer_contact": "De Santis",
+  "customer_email": null,
+  "customer_fax": "06 9120 4471",
+  "customer_reference": null,
+  "order_date": "2026-10-17",
+  "delivery": "entro martedì",
+  "notes": "Signed and stamped by Officina Meccanica De Santis.",
+  "lines": [
+    {"raw": "Filtro olio | FO-316 | 6", "description": "Filtro olio", "code": "FO-316", "quantity": 6, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "Pastiglie freno anteriori | PF-85017 | 10", "description": "Pastiglie freno anteriori", "code": "PF-85017", "quantity": 10, "unit": null, "unit_price": null, "confidence": "high", "note": "Quantity is handwritten."},
+    {"raw": "Cinghia distribuzione | CD-1560 | 2", "description": "Cinghia distribuzione", "code": "CD-1560", "quantity": 2, "unit": null, "unit_price": null, "confidence": "high", "note": "Quantity is handwritten."}
+  ]
+}

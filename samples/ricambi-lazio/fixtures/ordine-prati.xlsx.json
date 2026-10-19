@@ -1,0 +1,16 @@
+{
+  "customer_name": "Autofficina Prati snc",
+  "customer_contact": null,
+  "customer_email": null,
+  "customer_fax": null,
+  "customer_reference": "118",
+  "order_date": "2026-10-15",
+  "delivery": null,
+  "notes": null,
+  "lines": [
+    {"raw": "FA-220\tFiltro aria\t4", "description": "Filtro aria", "code": "FA-220", "quantity": 4, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "BA 70\tBatteria 70Ah\t1", "description": "Batteria 70Ah", "code": "BA 70", "quantity": 1, "unit": null, "unit_price": null, "confidence": "high", "note": null},
+    {"raw": "FO-3l6\tFiltro olio\t5", "description": "Filtro olio", "code": "FO-3l6", "quantity": 5, "unit": null, "unit_price": null, "confidence": "high", "note": "Code copied as written; the fourth character is a lowercase L."},
+    {"raw": "\tLiquido freni DOT 4\t6", "description": "Liquido freni DOT 4", "code": null, "quantity": 6, "unit": null, "unit_price": null, "confidence": "high", "note": null}
+  ]
+}
