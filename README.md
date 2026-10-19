@@ -129,3 +129,7 @@ make test
 ## License
 
 MIT
+
+---
+
+Built by Gabriele Delfini at [G.P.G. Tech](https://www.progettogpgtechsrl.it) (Rome). Need this on your own orders? Write to ceo@gpgtechsrl.it.
