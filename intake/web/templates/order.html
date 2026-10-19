@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}{{ r.source }} · order-intake{% endblock %}
+{% block body %}
+<main class="order">
+  <section class="order-head">
+    <a class="back" href="/">Inbox</a>
+    <div class="who">
+      <h1>
+        {% if r.customer_name %}{{ r.customer_name }} <span class="cid">{{ r.customer_id }}</span>
+        {% else %}<span class="unknown">{{ r.order.customer_name or "Unknown customer" }}</span>{% endif %}
+      </h1>
+      <dl class="facts">
+        <div><dt>Source</dt><dd>{{ kind_of(r.source) }}, {{ r.source }}</dd></div>
+        {% if r.order.customer_reference %}<div><dt>Their ref</dt><dd>{{ r.order.customer_reference }}</dd></div>{% endif %}
+        {% if r.order.order_date %}<div><dt>Date</dt><dd>{{ r.order.order_date }}</dd></div>{% endif %}
+        {% if r.order.delivery %}<div><dt>Delivery</dt><dd>{{ r.order.delivery }}</dd></div>{% endif %}
+        {% if r.order.customer_contact %}<div><dt>Sent by</dt><dd>{{ r.order.customer_contact }}</dd></div>{% endif %}
+      </dl>
+    </div>
+    <div class="progress">
+      <p id="ready-count"></p>
+      <div class="meter" aria-hidden="true"><span id="ready-bar"></span></div>
+      <button id="export" class="primary" type="button">Download CSV</button>
+    </div>
+  </section>
+
+  <div class="split">
+    <section class="original" aria-label="Original document">
+      {% if preview %}
+      <img src="data:image/png;base64,{{ preview }}" alt="The order as received">
+      {% else %}
+      <pre>{{ text }}</pre>
+      {% endif %}
+    </section>
+
+    <section class="lines" aria-label="Order lines">
+      <div id="order-issues"></div>
+      <div class="lines-head" aria-hidden="true">
+        <span>As written</span><span>Catalog item</span><span>Qty</span><span></span>
+      </div>
+      <ol id="lines"></ol>
+      <p class="run-note">
+        {% if r.mode == "fixtures" %}Extraction replayed from a saved fixture; matching and checks ran live.
+        {% else %}Read by {{ r.mode|capitalize }} in {{ r.seconds }}s; matching and checks ran locally.{% endif %}
+        Catalog: {{ seller }}.
+      </p>
+    </section>
+  </div>
+</main>
+<script id="order-data" type="application/json">{{ data | safe }}</script>
+<script src="/static/app.js"></script>
+{% endblock %}

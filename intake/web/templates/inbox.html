@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block body %}
+<main class="inbox">
+  <section class="intro">
+    <h1>Inbox</h1>
+    <p>Orders the way customers really send them. Open one to see what the
+      system read, what it matched in the catalog, and what it wants a person
+      to check.</p>
+    {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  </section>
+
+  {% for name, ws in workspaces.items() %}
+  <section class="seller">
+    <div class="seller-head">
+      <h2>{{ ws.seller }}</h2>
+      <span class="meta">{{ ws.items|length }} catalog items · {{ ws.customers|length }} customers · {{ ws.history|length }} past order lines</span>
+    </div>
+    <div class="cards">
+      {% for f in inbox[name] %}
+      <form method="post" action="/process">
+        <input type="hidden" name="ws" value="{{ name }}">
+        <input type="hidden" name="file" value="{{ f.name }}">
+        <button class="card" type="submit">
+          <span class="thumb">
+            {% if previews[(name, f.name)] %}
+            <pre>{{ previews[(name, f.name)] }}</pre>
+            {% else %}
+            <img src="/thumb/{{ name }}/{{ f.name }}" alt="" loading="lazy">
+            {% endif %}
+          </span>
+          <span class="card-meta">
+            <span class="kind">{{ kind_of(f.name) }}</span>
+            <span class="file">{{ f.name }}</span>
+          </span>
+        </button>
+      </form>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  {% if uploads %}
+  <section class="upload">
+    <h2>Try your own order</h2>
+    <p>Reads the file with Claude, then runs the same checks. Needs
+      <code>ANTHROPIC_API_KEY</code> on the machine running the server.</p>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+      <select name="ws" aria-label="Distributor">
+        {% for name, ws in workspaces.items() %}<option value="{{ name }}">{{ ws.seller }}</option>{% endfor %}
+      </select>
+      <input type="file" name="file" required aria-label="Order file">
+      <button type="submit" class="primary">Read order</button>
+    </form>
+  </section>
+  {% endif %}
+</main>
+{% endblock %}
