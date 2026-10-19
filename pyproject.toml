@@ -1,0 +1,37 @@
+[project]
+name = "order-intake"
+version = "0.3.0"
+description = "Read orders from faxes, photos, PDFs, spreadsheets and emails, check them against your catalog, and queue only the doubtful lines for a person."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Gabriele Delfini", email = "197490462+philosophers1235@users.noreply.github.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=1.15",
+    "pydantic>=2.7",
+    "rapidfuzz>=3.9",
+    "pymupdf>=1.24",
+    "openpyxl>=3.1",
+    "pillow>=10.4",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "jinja2>=3.1",
+    "python-multipart>=0.0.9",
+    "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2"]
+
+[project.scripts]
+intake = "intake.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["intake"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
